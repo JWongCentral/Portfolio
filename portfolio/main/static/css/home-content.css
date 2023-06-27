@@ -1,0 +1,164 @@
+
+
+.page.one .outer-content{
+    background:rgba(0, 0, 0, 0.5);
+    color:rgb(35, 252, 35);
+    font-size: 25px;
+    margin: 3%;
+    width: 70%;
+    height: 72%;
+    border-radius:30px;
+    padding: 30px;
+    overflow-y:auto;
+    border: solid rgb(167, 255, 2) 3px;
+    box-shadow: 0 0 15px 15px #0ff;
+    animation: GlowEffectOuter 2.5s ease infinite;
+    display:flex;
+}
+@keyframes GlowEffectOuter{
+    0%{box-shadow: 0 0 5px 5px #0ff;}
+    2%{box-shadow: 0 0 5px 5px #0ff;}
+    4%{box-shadow: 0 0 5px 5px #0ff;}
+    6%{box-shadow: 0 0 5px 5px #0ff;}
+    8%{box-shadow: 0 0 5px 5px #0ff;}
+    10%{box-shadow: 0 0 5px 5px #0ff;}
+    12%{box-shadow: 0 0 6px 6px #0ff;}
+    14%{box-shadow: 0 0 7px 7px #0ff;}
+    16%{box-shadow: 0 0 8px 8px #0ff;}
+    18%{box-shadow: 0 0 9px 9px #0ff;}
+    20%{box-shadow: 0 0 10px 10px #0ff;}
+    22%{box-shadow: 0 0 11px 11px #0ff;}
+    24%{box-shadow: 0 0 12px 12px #0ff;}
+    26%{box-shadow: 0 0 13px 13px #0ff;}
+    28%{box-shadow: 0 0 14px 14px #0ff;}
+    30%{box-shadow: 0 0 15px 15px #0ff;}
+    32%{box-shadow: 0 0 16px 16px #0ff;}
+    34%{box-shadow: 0 0 17px 17px #0ff;}
+    36%{box-shadow: 0 0 18px 18px #0ff;}
+    38%{box-shadow: 0 0 19px 19px #0ff;}
+    40%{box-shadow: 0 0 20px 20px #0ff;}
+    42%{box-shadow: 0 0 21px 21px #0ff;}
+    44%{box-shadow: 0 0 22px 22px #0ff;}
+    46%{box-shadow: 0 0 23px 23px #0ff;}
+    48%{box-shadow: 0 0 24px 24px #0ff;}
+    50%{box-shadow: 0 0 25px 25px #0ff;}
+    52%{box-shadow: 0 0 24px 24px #0ff;}
+    54%{box-shadow: 0 0 23px 23px #0ff;}
+    56%{box-shadow: 0 0 22px 22px #0ff;}
+    58%{box-shadow: 0 0 21px 21px #0ff;}
+    60%{box-shadow: 0 0 20px 20px #0ff;}
+    62%{box-shadow: 0 0 19px 19px #0ff;}
+    64%{box-shadow: 0 0 18px 18px #0ff;}
+    66%{box-shadow: 0 0 17px 17px #0ff;}
+    68%{box-shadow: 0 0 16px 16px #0ff;}
+    70%{box-shadow: 0 0 15px 15px #0ff;}
+    72%{box-shadow: 0 0 14px 14px #0ff;}
+    74%{box-shadow: 0 0 13px 13px #0ff;}
+    76%{box-shadow: 0 0 12px 12px #0ff;}
+    78%{box-shadow: 0 0 11px 11px #0ff;}
+    80%{box-shadow: 0 0 10px 10px #0ff;}
+    82%{box-shadow: 0 0 9px 9px #0ff;}
+    84%{box-shadow: 0 0 8px 8px #0ff;}
+    86%{box-shadow: 0 0 7px 7px #0ff;}
+    88%{box-shadow: 0 0 6px 6px #0ff;}
+    90%{box-shadow: 0 0 5px 5px #0ff;}
+    92%{box-shadow: 0 0 5px 5px #0ff;}
+    94%{box-shadow: 0 0 5px 5px #0ff;}
+    96%{box-shadow: 0 0 5px 5px #0ff;}
+    98%{box-shadow: 0 0 5px 5px #0ff;}
+    100%{box-shadow: 0 0 5px 5px #0ff;}
+}
+
+.page.one .Description{
+    float:left;
+    display:absolute;
+    position: relative;
+    height: 100%;
+    width:50%;
+    top:0;
+    
+}
+.page.one .project_links{
+    float:left;
+    display:absolute;
+    height:100%;
+    width:50%;
+}
+
+.page.one .Description img{
+    margin-left: 25%;
+    margin-top: 20px;
+    height:350px;
+    width:350px;
+    border-radius: 75px;
+    border: 3px solid red;
+}
+
+.page.one .Description h1{
+    padding-left: 20px;
+    padding-top: 50px;
+    font-size: 4vh;
+}
+.page.one .Description p{
+    font-size: 1.3vh;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.page.one .socials{
+    padding: 25px;
+    font-size: 1.6vh;
+    position: relative;
+}
+
+.page.one .socials i{
+    padding: 10px;
+    float:left;
+    color: white;
+}
+
+.page.one .project_links{
+    position:flex;
+    align-items: center;
+}
+
+.page.one .project_links h1{
+    font-size: 4vh;
+}
+.page.one .project{
+    position: relative;
+    height: 100px;
+    width: 500px;
+    margin: 25px;
+    left: 10%;
+    border-radius: 25px;
+    border: 5px solid rgb(0, 255, 0);
+    text-align: center;
+    align-items: center;
+}
+
+.page.one .project a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.page.one .project span{
+    font-weight: bold;
+    font-size: 40px;
+    top: 20px;
+    position: relative;
+    align-self:center;
+    color: white;
+}
+
+.page.one .project:hover{
+    box-shadow: 0 0 10px 10px rgb(9, 255, 0);
+}
+
+.home{
+    border: solid 3px white;
+    border-radius: 30px;
+}

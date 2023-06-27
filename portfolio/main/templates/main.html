@@ -1,0 +1,242 @@
+
+{% extends "navbar.html"%}
+{%load static%}
+
+{%block title%}
+<title>JWong Portfolio</title>
+{%endblock%}
+
+{%block content%}
+<link rel = "stylesheet" href="{%static '/css/main.css'%}"/> 
+    <div class = "page one" id = "home">
+        <link rel = "stylesheet" href="{%static '/css/home-content.css'%}"/>
+        <div class = "outer-content">
+            
+            <div class = "Description">
+                <img src = "{%static '/images/shorty_comfy.png'%}">
+                <h1>Welcome</h1>
+                <p>I am a recent graduate from UMBC with a dedication towards learning and 
+                    developing new technologies with a focus on parallel and distributed systems.
+                    I am a passionate software developer dedicated to harnessing the power of algorithms, parallelization, 
+                    and high-speed computing to drive efficiencies and optimize performance. With a strong background in AI/ML projects, 
+                    data science, and both frontend and backend design, I thrive on creating innovative solutions that push the boundaries 
+                    of what is possible. By combining my expertise in cutting-edge technologies with a deep understanding of algorithmic 
+                    principles, I strive to deliver exceptional results that drive productivity and transform complex challenges into elegant
+                    solutions.
+                </p>
+                <div class = "socials">
+                    <h2>Socials</h2>
+                    <div class = "linkedin"><a href="/"><i class="fa-brands fa-linkedin"></i></a></div>
+                    <div class = "github"><a href="/"><i class="fa-brands fa-github"></i></i></a></div>
+                </div>
+            </div>
+            <div class = "project_links">
+                <h1> Projects:</h1>
+                <div class = "project one">
+                    <a href="/main#one"><span>Minesweeper Solver</span></a>
+                </div>
+                <div class = "project two">
+                    <a href="/main#two"><span>Sky Fall</span></a>
+                </div>
+                <div class = "project three">
+                    <a href="/projects#three"><span>Parallel Projects</span></a>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class = "page two" id = "expertise">
+        <link rel = "stylesheet" href="{%static '/css/expertise.css'%}"/> 
+        <div class = "expertise_container"> 
+            
+            <div class = "container education">
+                <div class = "image_container education"></div>
+                <div class = "content">
+                    <h1>Education:</h1>
+                    <ul>
+                        <li><p>University of Maryland Baltimore County<p></li>
+                        <li><p>Bachelor of Computer Science<p></li>
+                        <li><p>GPA: 3.49<p></li>
+                    </ul>
+                    <h1>Notable Classes Taken:</h1>
+                    <ul>
+                        <li><p>Software Developement Course<p></li>
+                        <li><p>Database course<p></li>
+                        <li><p>Ai/ML course<p></li>
+                        <li><p>Networking course<p></li>
+                        <li><p>Neural Technology and Engineering course<p></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class = "container skills">
+                <div class = "content">
+                    <h1>Skills:</h1>
+                    <h2>Proficiency in the following languages:</h2>
+                    <ul>
+                        <li><p>C, C++, C#<p></li>
+                        <li><p>Python, Django, Flask<p></li>
+                        <li><p>Java, Javascript, React<p></li>
+                        <li><p>Sql, SqlLite, MongoDB<p></li>
+                        <li><p>HTML5, CSS, Bootstrap<p></li>
+                        <li><p>Linux/Unix, Open Multi Processing(OMP)<p></li>
+                    </ul>
+                    
+                    <h2>Other notable Skills:</h2>
+
+                    <ul>
+                        <li><p>Experience using Agile methodology<p></li>
+                        <li><p>Experience using Atlassian with a team to create a product<p></li>
+                        <li><p>AI/ML experience, Creating Neural Networks, implementation of ML concepts to make predictions for statistical analysis and probability.<p></li>
+                    </ul>
+                </div>
+                <div class = "image_container skills"></div>
+            </div>
+        </div>
+    </div>
+    <div class = "page three" id = "projects">
+        <div class = "projects_container"> 
+            <link rel = "stylesheet" href="{%static '/css/projects.css'%}"/> 
+            <div class = "project one" id = "one">
+                <div class = "content">
+                    <div class = "text_container">
+                    <h1>Parallel Minesweeper Solver<br></h1>
+                    
+                    <h2>Description:</h2>
+                    <p>The parallel Minesweeper solver program utilizes the power of C++ to solve Minesweeper boards 
+                        concurrently. By dividing the task among multiple threads or processes and using AI forward checking 
+                        procedure (AC3) and backward checking, to maximizes computational efficiency, effectively revealing 
+                        safe cells and flagging mines in the game, resulting in faster completion times and improved performance.
+                    </p>
+                    <h2>Packages/Concepts used:</h2>
+                    <p>
+                        <ul>
+                            <li><p>- OpenMP a parallelization package for shared memory processes</p></li>
+                            <li><p>- Arc Consistency 3 - as a forward/backward checking procedure</p></li>
+                            <li><p>- Using a heuristics such as MCV (Most Constrained Variable) to improve performance and speed</p></li>
+                        </ul>
+                    </p>
+                    <h2>Paper Documentation:</h2>
+                    <a href = "https://docs.google.com/document/d/1uE_km6ai3z89nzLJ1edvJ7pniUx-49iIKwdCBMyYe4U/edit?usp=sharing" target = "_blank"><i class="fa-solid fa-file"></i><a>
+                    <h2>Presentation:</h2>
+                    <a href = "https://docs.google.com/presentation/d/1HsMFiUZQezD74f9xeW0zQwxCtxsDVX_1ubDEEEeIH44/edit?usp=sharing" target = "_blank"><i class="fa-solid fa-file-powerpoint"></i><a>
+                    <h2>Github:</h2>
+                    <a href = "https://github.com/JWongCentral/Parallel_Minesweeper_Solver" target = "_blank"><i class="fa-brands fa-github"></i><a>
+                    <h2>Live Test:</h2>
+                    <a href = "/projects/minesweeper" target = "_blank"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+                <div class = "image">
+                    possible images
+                </div>
+            </div>
+            <div class = "project two" id = "two">
+                <div class = "content">
+                    <div class = "text_container">
+                    <h1>Sky Fall<br></h1>
+                    
+                    <h2>Description:</h2>
+        
+                    <p>This was assigned as a project to our group where we had to create our own roles and elect a project manager 
+                        for this assignment. We had to use the AGILE methodology and use Atlassian to operate and organize the team's members
+                        logistic, coding, and general direction of the project. For this assignment I was the project manager, and had to assign roles,
+                        tasks, code merges/conflicts, and provide the help and support to my teammates. I was also the full stack developer as I had to create
+                        the front end (html/css) and backend.
+                    </p>
+                    <h2>Packages/Concepts used:</h2>
+                    <p>
+                        <ul>
+                            <li><p>- Flask, html/css, javascript, sqlite3</p></li>
+                            <li><p>- Atlassian to utilize AGILE methodology</p></li>
+                            <li><p>- Creating API using GET/POST requests</p></li>
+                        </ul>
+                    </p>
+                    <h2>Github:</h2>
+                    <a href = "https://github.com/QuackHeadCoder/CMSC_447_Group_project" target = "_blank"><i class="fa-brands fa-github"></i><a>
+                    <h2>Live Test:</h2>
+                    <p>Not Available</p>
+                    </div>
+                </div>
+                <div class = "image">
+                    possible images
+                </div>
+            </div>
+            <div class = "project three" id = "three">
+                <div class = "content">
+                    <div class = "text_container">
+                        <h1>Parallel Programs<br></h1>
+                        <h2>Description:</h2>
+                        <p>This a collection of parallelize algorithms that could or would otherwise have a 
+                            long runtime running concurrently or on a single thread
+                        </p>
+                        
+                        <h2>Prefix Sum:</h2>
+                        <p>Common parallelization issue that occurs when we have an array/matrix that must be summed. 
+                            This offers a parallelized approach to solve this issue
+                        </p>
+                        <h2>Github:</h2>
+                        <a href = "https://github.com/JWongCentral/Parallel_Programs/blob/main/Prefix_Sum/prefix_sum.c" target = "_blank"><i class="fa-brands fa-github"></i><a>
+        
+                        <h2>Parallel Summation:</h2>
+                        <p>
+                            Instead of using prefix sum we used shared memory to parallelize summation of an array.
+                        </p>
+                        <h2>Github:</h2>
+                        <a href = "https://github.com/JWongCentral/Parallel_Programs/blob/main/Summation/parallel_sum.c" target = "_blank"><i class="fa-brands fa-github"></i><a>
+        
+                        <h2>Parallel bucket and selection sort:</h2>
+                        <p>
+                            Parallelization of two common sorting algorithms. Their markup due to parallelization, 
+                            and general implementation of both under a parallelized paradigm.
+                        </p>
+                        <h2>Github:</h2>
+                        <a href = "https://github.com/JWongCentral/Parallel_Programs/blob/main/bucket_sort/parallel_bucket.c" target = "_blank"><i class="fa-brands fa-github"></i><a>
+        
+                        <h2>Consecutive Prime Numbers:</h2>
+                        <p>
+                            Parallelization of finding all prime numbers and counting 
+                            how many consecutive prime numbers with a difference of exactly 2, such as (5,7) and (11,13) are considered consecutive.
+                        </p>
+                        <h2>Github:</h2>
+                        <a href = "https://github.com/JWongCentral/Parallel_Programs/blob/main/consecutive_prime_numbers/consecutive_prime_numbers.c" target = "_blank"><i class="fa-brands fa-github"></i><a>
+        
+                    </div>
+                </div>
+                <div class = "image">
+                </div>
+                
+            </div>
+        
+        
+        
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $('.sub-btn').next('.sub-menu').slideToggle();
+                });
+            </script>
+        </div>
+    </div>
+    <div class = "page four" id = "contact">
+        <div class = "contact_container"> 
+            <link rel = "stylesheet" href="{%static '/css/contact.css'%}"/> 
+            <div class = "form_container"> 
+                <form method = "POST" action = "/contact">
+                    {% csrf_token %}
+                    {{form}}
+                    
+                    <div class = "submit_container">
+                        <input type="submit" class = "contact_send" id="contact_send" name = "contact_send" value="Send">
+                        {% if success%}
+                            <div class = "success"><h1>Email Sent</h1></div>
+                        {% elif success%}
+                            <div class = "error"><h1>ERROR</h1></div>
+                        {%endif%}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{%endblock%}

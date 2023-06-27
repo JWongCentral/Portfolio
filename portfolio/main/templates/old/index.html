@@ -1,0 +1,49 @@
+<script type="text/javascript" src="{%static '/js/minesweeper.js'%}"></script>
+
+
+<body>
+    <div id="box">
+       <h2>MINESWEEPER!</h2><hr><br><br>
+          <div id="field"></div>
+          <br>
+        <div id="lost" style="display: none;">
+          <h3>You got bombed!</h3>
+          <button id="new-game-button" type="button" onclick="reload()">Start Again</button>
+        </div>         
+    </div>
+</body>
+
+
+h2, h3{
+    color: whitesmoke;
+}
+
+#box {
+    text-align: center;
+}
+
+#field table {
+    border-collapse: collapse;
+    font-size: 150%;
+    font-family: san-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#field table td {
+    background-color: rgb(195, 195, 195);
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
+    border: 1px solid black;    
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background-color:rgb(195, 195, 195);
+    color: black;
+    font-weight: bolder;
+    border-radius: 20px 20px 20px 20px;
+}

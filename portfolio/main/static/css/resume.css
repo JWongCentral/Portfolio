@@ -1,0 +1,12 @@
+
+.pdf{
+    height: 90vh;
+    width: 80vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+.resume{
+    border: solid 3px white;
+    border-radius: 30px;
+}

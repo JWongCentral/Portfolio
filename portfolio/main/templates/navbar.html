@@ -1,0 +1,91 @@
+
+{%load static%}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        {%block title%}
+        {%endblock%}
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href="{%static '/css/navbar.css'%}"/>
+        <script defer src="{%static '/js/pages.js'%}"></script>
+        <script src="https://kit.fontawesome.com/57875cd520.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div class = "menu-btn">
+                <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class = "side-bar active">
+                <header>
+                    <div class = "close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <img src = "{%static '/images/logo.png'%}">
+                    <h1> Jack Wong </h1>
+                    <h3> Software Developer </h3>
+                </header>
+            
+
+                <div class = "menu">
+                    <div class = "item home"><a href="/#home"><i class = "fas fa-home"></i><span>Home</span></a></div>
+                    <div class = "item expertise"><a href="/#expertise"><i class="fa-solid fa-book-open"></i></i><span>Expertise</span></a></div>
+                    <div class = "item projects"><a class="sub-btn"><i class = "fa-solid fa-folder"></i><span>Projects</span>
+                        <!--dropdown menu-->
+                        
+                        <!--logo-->
+                        <i class="fa-solid fa-chevron-left dropdown"></i>
+
+                        </a>
+                        <div class = "sub-menu">
+                            <a href="/#one" class = "sub-item"> <span>Minesweeper</span> </a>
+                            <a href="/#two" class = "sub-item"> <span>Sky Fall</span> </a>
+                            <a href="#three" class = "sub-item"> <span>Parallel Project</span> </a>
+                        </div>
+                    </div>
+                    <div class = "item resume"><a href="/resume"><i class = "fa-solid fa-file"></i><span>Resume</span></a></div>
+                    <div class = "item contact"><a href="/#contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a></div>
+
+                </div>
+                    
+            
+        </div>
+        
+        <div class = "container active">
+        {%block content%}
+        {%endblock%}
+        </div>
+           
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                //expanding and collapsing menu
+                $('.menu-btn').click(function(){
+                    $('.side-bar').addClass('active');
+                    $('.container').addClass('active');
+                    $('.menu-btn').css("visibility", "hidden");
+                    $('.close-btn').css("visibility", "visible");
+                });
+
+                //close
+                $('.close-btn').click(function(){
+                    $('.side-bar').removeClass('active');
+                    $('.container').removeClass('active');
+                    $('.menu-btn').css("visibility", "visible");
+                    $('.close-btn').css("visibility", "hidden");
+                })
+
+                //toggling submenu
+                $('.sub-btn').click(function(){
+                    $(this).next('.sub-menu').slideToggle();
+                    $(this).find('.dropdown').toggleClass('rotate');
+                });
+            });
+        </script>
+
+        
+    </body>
+</html>

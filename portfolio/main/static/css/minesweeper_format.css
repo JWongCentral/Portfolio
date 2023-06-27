@@ -1,0 +1,94 @@
+
+.main_container{
+    margin: 5%;
+    width: 75%;
+    height: 80%;
+    border: solid 3px black;
+    text-align:center;
+    box-shadow: 0 0 30px 30px rgba(0,255,0,0.8);
+    border-radius:30px;
+    background: rgba(0,0,0,0.8);
+}
+.minesweeper_container{
+    display:flex;
+    height: 100vh;
+    width: 100%;
+}
+.minesweeper_container .game h1{
+    color: rgb(0,255,0);
+    font-weight: bold;
+    font-size: 40px;
+
+}
+.minesweeper_container .statistics{
+    display:grid;
+    margin:5%;
+    margin-left: 0%;
+    width: 50%;
+    height: 70%;
+    border: solid 3px rgba(255,255,255,0.6);
+    box-shadow: inset 0 0 5px 5px rgba(255,255,255,.4),0 0 10px 10px rgba(255,255,255,.4) ;
+    border-radius: 30px;
+    padding: 10px;
+    background:rgba(0,0,0,0);
+}
+.minesweeper_container .statistics h1,
+.minesweeper_container .statistics p{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0,255,0);
+}
+.minesweeper_container .statistics p{
+    font-size: 18px;
+}
+
+.minesweeper_container .statistics .text {
+    text-align:left;
+    margin: 5%;
+    margin-top: 0%;
+    margin-left: 5%;
+    padding: 3%;
+    width: 80%;
+    height: 95%;
+    border: solid 3px rgba(255,255,255,0.6);
+    overflow:auto;
+    word-wrap: break-word;
+    box-shadow: inset 0 0 3px 3px rgba(255,255,255,.4),0 0 5px 5px rgba(255,255,255,.4) ;
+    border-radius: 30px;
+}
+.ai_solver{
+    margin-left: 30%;
+    margin-top: 6%;
+    width: 150px;
+    height: 35px;
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0);
+    border: solid 2px rgba(255,255,255,0.6);
+}
+
+.ai_solver:hover{
+    box-shadow: inset 0 0 5px 5px rgba(255,255,255,0.6), 0 0 8px 8px rgba(255,255,255,0.7);
+    border: solid 2px rgba(255,255,255,0.9);
+}
+
+
+.minesweeper_container .game{
+    display:relative;
+    min-width: 575px;
+    min-height: 800px;
+    width: 40%;
+    height: 0%;
+    margin:5%;
+    border:solid 3px rgba(255,255,255,0.6);
+    box-shadow: inset 0 0 5px 5px rgba(255,255,255,0.4), 0 0 10px 10px rgba(255,255,255,0.4);
+    border-radius: 40px;
+    background: rgba(0,0,0,0);
+    align-items: center;
+}
+
+.buffer{
+    margin-top: 20px;
+}

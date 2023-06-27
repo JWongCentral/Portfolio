@@ -1,0 +1,298 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/010/671/880/original/abstract-technology-futuristic-neon-circle-glowing-blue-and-pink-light-lines-with-speed-motion-blur-effect-on-dark-blue-background-illustration-free-vector.jpg");
+    background-attachment:fixed;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    height: 100%;
+}
+
+.side-bar{
+    background: rgba(0,0,0,0.5);
+    width:250px;
+    left: -250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property:left;
+    animation: gloweffect 5s linear infinite;
+    border-right: solid rgb(40, 172, 0) 3px;
+}
+@keyframes gloweffect{
+    0% {
+		background: rgba(0,0,0,0.5);
+	}
+    10%{
+        background: rgba(0,0,0,0.55);
+    }
+    20%{
+        background: rgba(0,0,0,0.6);
+    }
+    30%{
+        background: rgba(0,0,0,0.65);
+    }
+    40%{
+        background: rgba(0,0,0,0.7);
+    }
+	50% {
+		background: rgba(0,0,0,0.75);
+	}
+    60%{
+        background: rgba(0,0,0,0.7);
+    }
+    70%{
+        background: rgba(0,0,0,0.65);
+    }
+    80%{
+        background: rgba(0,0,0,0.6);
+    }
+    90%{
+        background: rgba(0,0,0,0.55);
+    }
+	100% {
+		background: rgba(0,0,0,0.50);
+	}
+}
+
+header img{
+    height:150px;
+    width: 150px;
+    margin: 15px;
+    margin-left:40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 10px rgb(0, 183, 255);
+    animation: glow-animation 5s linear infinite;
+}
+@keyframes glow-animation {
+	0% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)20%);}
+    1% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)21%);}
+    2% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)22%);}
+    3% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)23%);}
+    4% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)24%);}
+    5% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)25%);}
+    6% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)26%);}
+    7% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)27%);}
+    8% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)28%);}
+    9% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)29%);}
+    10% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)30%);}
+    11% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)31%);}
+    12% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)32%);}
+    13% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)33%);}
+    14% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)34%);}
+    15% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)35%);}
+    16% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)36%);}
+    17% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)37%);}
+    18% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)38%);}
+    19% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)39%);}
+    20% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)40%);}
+    21% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)41%);}
+    22% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)42%);}
+    23% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)43%);}
+    24% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)44%);}
+    25% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)45%);}
+    26% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)46%);}
+    27% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)47%);}
+    28% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)48%);}
+    29% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)49%);}
+    30% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)50%);}
+    31% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)51%);}
+    32% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)52%);}
+    33% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)53%);}
+    34% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)54%);}
+    35% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)55%);}
+    36% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)56%);}
+    37% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)57%);}
+    38% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)58%);}
+    39% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)59%);}
+    40% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)60%);}
+    41% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)61%);}
+    42% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)62%);}
+    43% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)63%);}
+    44% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)64%);}
+    45% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)65%);}
+    46% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)66%);}
+    47% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)67%);}
+    48% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)68%);}
+    49% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)69%);}
+    50% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)70%);}
+    51% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)69%);}
+    52% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)68%);}
+    53% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)67%);}
+    54% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)66%);}
+    55% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)65%);}
+    56% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)64%);}
+    57% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)63%);}
+    58% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)62%);}
+    59% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)61%);}
+    60% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)60%);}
+    61% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)59%);}
+    62% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)58%);}
+    63% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)57%);}
+    64% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)56%);}
+    65% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)55%);}
+    66% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)54%);}
+    67% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)53%);}
+    68% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)52%);}
+    69% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)51%);}
+    70% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)50%);}
+    71% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)49%);}
+    72% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)48%);}
+    73% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)47%);}
+    74% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)46%);}
+    75% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)45%);}
+    76% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)44%);}
+    77% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)43%);}
+    78% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)42%);}
+    79% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)41%);}
+    80% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)40%);}
+    81% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)39%);}
+    82% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)38%);}
+    83% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)37%);}
+    84% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)36%);}
+    85% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)35%);}
+    86% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)34%);}
+    87% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)33%);}
+    88% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)32%);}
+    89% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)31%);}
+    90% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)30%);}
+    91% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)29%);}
+    92% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)28%);}
+    93% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)27%);}
+    94% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)26%);}
+    95% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)25%);}
+    96% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)24%);}
+    97% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)23%);}
+    98% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)22%);}
+    99% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)21%);}
+    100% {background: radial-gradient(circle at center, rgb(0, 242, 255),rgb(0, 242, 255), rgba(0,0,0,0)20%);}
+    
+}
+.close-btn{
+    position:absolute;
+    color:white;
+    font-size: 23px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+}
+header h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color:white;
+
+
+}
+header h3{
+    text-align: center;
+    font-weight: 500;
+    font-size: 16;
+    padding-bottom: 13px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color:white;
+
+}
+
+
+.menu{
+    width:100%;
+    margin-top:30px;
+}
+.menu .item span{
+    color:rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: bold;
+}
+.menu .item{
+    position:relative;
+    cursor: pointer;
+}
+
+.menu .item a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+
+.item i{
+    margin-right: 15px;
+}
+
+.item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.sub-menu{
+    background: rgba(0, 0, 0, 0);
+    display: none;
+}
+
+.menu-btn{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    cursor: pointer;
+    margin:25px;
+    visibility:hidden;
+}
+
+.side-bar.active{
+    left:0;
+}
+
+.side-bar::-webkit-scrollbar{
+    width:0px;
+}
+.item .side-bar a{
+    padding-left:80px;
+}
+
+.rotate{
+    transform: rotate(-90deg);
+}
+
+.selected{
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 30px;
+}
+.container{
+    background: rgba(255, 4, 4, 0);
+    color:black;
+    width:100%;
+    left: 100px;
+    height: 99vh;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    transition: 0.6s ease;
+    transition-property:left;
+    scroll-behavior: smooth;
+}
+
+.active{
+    left:250px;
+}

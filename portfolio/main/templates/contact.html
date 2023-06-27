@@ -1,0 +1,28 @@
+
+{% extends "navbar.html"%}
+{%load static%}
+
+{%block title%}
+<title>Contact</title>
+{%endblock%}
+
+{%block content%}
+<div class = "contact_container"> 
+    <link rel = "stylesheet" href="{%static '/css/contact.css'%}"/> 
+    <div class = "form_container"> 
+        <form method = "POST" action = "/contact">
+            {% csrf_token %}
+            {{form}}
+            
+            <div class = "submit_container">
+                <input type="submit" class = "contact_send" id="contact_send" name = "contact_send" value="Send">
+                {% if success%}
+                    <div class = "success"><h1>Email Sent</h1></div>
+                {% elif success%}
+                    <div class = "error"><h1>ERROR</h1></div>
+                {%endif%}
+            </div>
+        </form>
+    </div>
+</div>
+{%endblock%}

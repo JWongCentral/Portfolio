@@ -1,0 +1,68 @@
+
+
+{% extends "navbar.html"%}
+{%load static%}
+{%block title%}
+<title>Expertise</title>
+{%endblock%}
+{%block content%}
+<link rel = "stylesheet" href="{%static '/css/expertise.css'%}"/> 
+    <div class = "expertise_container"> 
+        
+        <div class = "container education">
+            <div class = "image_container education"></div>
+            <div class = "content">
+                
+                
+                <h1>Education:</h1>
+
+                <ul>
+                    <li><p>University of Maryland Baltimore County<p></li>
+                    <li><p>Bachelor of Computer Science<p></li>
+                    <li><p>GPA: 3.49<p></li>
+                </ul>
+
+                <h1>Notable Classes Taken:</h1>
+
+                <ul>
+                    <li><p>Software Developement Course<p></li>
+                    <li><p>Database course<p></li>
+                    <li><p>Ai/ML course<p></li>
+                    <li><p>Networking course<p></li>
+                    <li><p>Neural Technology and Engineering course<p></li>
+                </ul>
+
+            </div>
+            
+            
+        </div>
+        <div class = "container skills">
+            <div class = "content">
+                <h1>Skills:</h1>
+                <h2>Proficiency in the following languages:</h2>
+
+                <ul>
+                    <li><p>C, C++, C#<p></li>
+                    <li><p>Python, Django, Flask<p></li>
+                    <li><p>Java, Javascript, React<p></li>
+                    <li><p>Sql, SqlLite, MongoDB<p></li>
+                    <li><p>HTML5, CSS, Bootstrap<p></li>
+                    <li><p>Linux/Unix, Open Multi Processing(OMP)<p></li>
+                </ul>
+                
+                <h2>Other notable Skills:</h2>
+
+                <ul>
+                    <li><p>Experience using Agile methodology<p></li>
+                    <li><p>Experience using Atlassian with a team to create a product<p></li>
+                    <li><p>AI/ML experience, Creating Neural Networks, implementation of ML concepts to make predictions for statistical analysis and probability.<p></li>
+                </ul>
+            </div>
+            <div class = "image_container skills"></div>
+
+           
+            
+
+        </div>
+    </div>
+{%endblock%}

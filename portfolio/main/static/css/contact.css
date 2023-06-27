@@ -1,0 +1,150 @@
+.contact{
+    border: solid 3px white;
+    border-radius: 30px;
+}
+
+.page.four .contact_container{
+    margin: 7.5%;
+    height: 70%;
+    width: 55%;
+    overflow:auto;
+    border-radius: 8%;
+    background: rgba(0,0,0,0.9);
+    display:relative;
+    box-shadow: 0 0 10px 10px rgb(0, 255, 0);
+}
+
+.page.four .form_container{
+    height: auto;
+    width: 50%;
+    margin:5%;
+}
+
+.page.four .form_container label{
+    float:left;
+    color:rgb(0, 255, 0);
+    font-size: 30px;
+    font-weight: bold;
+    width:100%;
+}
+.page.four .input_text{
+    margin: 10px
+}
+.page.four .contact_input{
+    width:100%;
+    margin-left:50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding-left: 10px;
+    float:left;
+}
+
+.page.four .contact_input::placeholder,
+.page.four .contact_message::placeholder{
+    color:blue;
+}
+.page.four .contact_input:focus{
+    color:black;
+    font-weight: bold;
+    outline: 4px solid rgb(0, 255, 0);
+}
+
+.page.four .contact_input.name,
+.page.four .contact_input.email,
+.page.four .contact_input.subject
+{
+    width: 300px;
+    height:50px;
+}
+.page.four .contact_input.content{
+    width: 500px;
+    height: 300px;
+    font-size: 20px;
+}
+
+.page.four .contact_send{
+    width: 100px;
+    height: 45px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+
+.page.four .contact_send:hover{
+    outline: 3px solid rgb(0, 255, 0);
+}
+
+.page.four .form_container .success h1{
+    height:40px;
+    width:200px;
+    margin-left: 50px;
+    margin-top: 25px;
+    padding-left: 15px;
+    color: rgb(0, 255, 0);
+    font-size: 30px;
+    border: solid 3px rgb(0, 255, 0);
+    background:darkgreen;
+    border-radius: 20px;
+    animation: fade 2s linear infinite;
+    box-shadow: 0 0 10px 10px rgba(0,128,0,0.8);
+}
+
+.page.four .form_container .success h1{
+    height:40px;
+    width:200px;
+    margin-left: 50px;
+    margin-top: 25px;
+    color: rgb(0, 255, 0);
+    font-size: 30px;
+    border: solid 3px rgb(0, 255, 0);
+    background:darkgreen;
+    border-radius: 20px;
+    animation: success_fade 2s linear infinite;
+    box-shadow: 0 0 10px 10px rgba(0,128,0,0.8);
+}
+
+.page.four .form_container .error{
+    text-align: center;
+}
+.page.four .form_container .error h1{
+    height:40px;
+    width:200px;
+    margin-left: 50px;
+    margin-top: 25px;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    border: solid 3px rgb(255, 0, 0);
+    background:darkred;
+    border-radius: 20px;
+    animation: fail_fade 2s linear infinite;
+    box-shadow: 0 0 10px 10px rgba(128,0,0,0.8);
+}
+
+
+@keyframes success_fade{
+    0%{
+        background:darkgreen;
+    }
+    50%{
+        background:rgba(0,100,0,0.3);
+    }
+    100%{
+        background:darkgreen;
+    }
+}
+
+@keyframes fail_fade{
+    0%{
+        background:darkred;
+    }
+    50%{
+        background:rgba(139,0,0,0.3);
+    }
+    100%{
+        background:darkred;
+    }
+}

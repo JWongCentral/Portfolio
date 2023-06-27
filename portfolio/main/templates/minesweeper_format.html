@@ -1,0 +1,38 @@
+{% extends "navbar.html"%}
+{%load static%}
+
+{%block content%}
+  <link rel="stylesheet" href="{%static '/css/minesweeper_format.css'%}">
+  <div class = "main_container">
+    <div class = "minesweeper_container">
+      <div class = "game">
+        <h1>Minesweeper<h1>
+          {%block minesweeper_game%}
+          {%endblock%}
+      </div>   
+
+      <div class = "statistics">
+        <h1>Run Solver</h1>
+        <div class = "text">
+          <p>
+            The AI solver will give you the specific action of your next move and will 
+            give you the highest probability of success.
+          </p>
+          <p class = "buffer">
+            red glow = flag
+          </p>
+          <p>
+            green glow = open
+          </p>
+        </div>
+        
+
+        {%block ai_solver%}
+        {%endblock%}
+
+      </div>
+    </div>
+
+      
+  </div>
+{%endblock%}

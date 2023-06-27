@@ -1,0 +1,42 @@
+{% extends "navbar.html"%}
+{%load static%}
+{%block title%}
+<title>Home</title>
+{%endblock%}
+{%block content%}
+    <link rel = "stylesheet" href="{%static '/css/home-content.css'%}"/>
+    <div class = "outer-content">
+        
+        <div class = "Description">
+            <img src = "{%static '/images/shorty_comfy.png'%}">
+            <h1>Welcome</h1>
+            <p>I am a recent graduate from UMBC with a dedication towards learning and 
+                developing new technologies with a focus on parallel and distributed systems.
+                I am a passionate software developer dedicated to harnessing the power of algorithms, parallelization, 
+                and high-speed computing to drive efficiencies and optimize performance. With a strong background in AI/ML projects, 
+                data science, and both frontend and backend design, I thrive on creating innovative solutions that push the boundaries 
+                of what is possible. By combining my expertise in cutting-edge technologies with a deep understanding of algorithmic 
+                principles, I strive to deliver exceptional results that drive productivity and transform complex challenges into elegant
+                solutions.
+            </p>
+            <div class = "socials">
+                <h2>Socials</h2>
+                <div class = "linkedin"><a href="/"><i class="fa-brands fa-linkedin"></i></a></div>
+                <div class = "github"><a href="/"><i class="fa-brands fa-github"></i></i></a></div>
+            </div>
+        </div>
+        <div class = "project_links">
+            <h1> Projects:</h1>
+            <div class = "project one">
+                <a href="/projects#one"><span>Minesweeper Solver</span>
+            </div>
+            <div class = "project two">
+                <a href="/projects#two"><span>Sky Fall</span>
+            </div>
+            <div class = "project three">
+                <a href="/projects#three"><span>Parallel Projects</span></a>
+            </div>
+        
+        </div>
+    </div>
+{%endblock%}

@@ -1,0 +1,92 @@
+.expertise{
+    border: solid 3px white;
+    border-radius: 30px;
+}
+
+.page.two .expertise_container{
+    display:block;
+    height: 100%;
+    width: 80%;
+}
+
+.page.two .expertise_container .container{
+    left: 0;
+    position: relative;
+    display:flex;
+    height:40%;
+    width:94%;
+    margin: 0%;
+    padding: 0%;
+    overflow:hidden;
+}
+.container .education .image_container {
+    position:relative;
+    margin:5%;
+    min-width: 400px;
+    height: 400px;
+    box-shadow: 0 0 10px 10px rgba(255, 166, 0,0.8);
+    border-radius: 100px;
+    overflow:hidden;
+    background: rgba(0,0,0,0.5);
+    background-size: 100%;
+    background-image: url("https://styleguide.umbc.edu/wp-content/uploads/sites/113/2022/06/UMBCretrievers-PRIMARY-LOGO-300x279.png");
+    background-repeat: no-repeat;
+    
+}
+
+.container .skills .image_container{
+    margin-top:8%;
+    position:relative;
+    margin-left:5%;
+    margin-right: 5%;
+    min-width: 400px;
+    height: 400px;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+    overflow:hidden;
+    background: rgba(0,0,0,0.5);
+    background-image: url("https://assets.leetcode.com/static_assets/others/%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B_%E5%85%A5%E9%97%A8.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.page.two .container .content{
+    width: 1000px;
+    height: auto;
+    margin: 5%;
+    margin-bottom:0%;
+    margin-right: 0%;
+    background: rgba(0,0,0,0.85);
+    padding: 3%;
+    overflow:auto;
+    border: solid 5px rgb(0, 255, 0);
+    border-radius: 50px;
+}
+.page.two .expertise_container .container.skills{
+    min-height: 625px;
+}
+.page.two .container .content h1{
+    padding:1%;
+    color:rgb(0, 255, 0);
+    font-weight: bold;
+    font-size: 30px;
+}
+.page.two .container .content h2{
+    padding: 1%;
+    margin-left: 20px;
+    color:rgb(0, 255, 0);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.page.two .container .content p{
+    margin-left:40px;
+    color:rgb(0, 255, 0);
+    font-weight: bold;
+    font-size: 18px;
+}
+ul {
+    list-style: none;
+}

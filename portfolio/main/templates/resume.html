@@ -1,0 +1,14 @@
+
+
+{% extends "navbar.html"%}
+{%load static%}
+{%block title%}
+<title>Resume</title>
+{%endblock%}
+{%block content%}
+        <div class = "pdf_container"> 
+            <link rel = "stylesheet" href="{%static '/css/resume.css'%}"/> 
+            <iframe class = "pdf" src = "{%static '/files/Jack_Wong_Resume.pdf'%}" frameborder = "0">
+            </iframe> 
+        </div>
+{%endblock%}

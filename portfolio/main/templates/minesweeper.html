@@ -1,0 +1,25 @@
+{% extends "minesweeper_format.html"%}
+{%load static%}
+
+{%block minesweeper_game%}
+<link rel="stylesheet" href="{%static '/css/minesweeper.css'%}">
+<script type="text/javascript" src="{%static '/js/minesweeper.js'%}"></script>
+<div class = "grid">
+</div>
+<div class = "form_container">
+    <button class = "restart" id="restart" name = "restart" >Restart</button>
+</div>
+<div class = "gameover">
+    <div class = "win">You Win</div>
+    <div class = "lose">You Lose</div>
+</div>
+
+{%endblock%}
+
+{%block ai_solver%}
+    {% csrf_token %}
+    <button class = "ai_solver" id = "ai_solver" name = "ai_solver">AI Solver</button>
+    <div class = "output">
+        Output:
+    </div>
+{%endblock%}
