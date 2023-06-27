@@ -13,7 +13,7 @@
         <div class = "outer-content">
             
             <div class = "Description">
-                <img src = "{%static '/images/shorty_comfy.png'%}">
+                <img src = "{%static '/images/pfp.png'%}">
                 <h1>Welcome</h1>
                 <p>I am a recent graduate from UMBC with a dedication towards learning and 
                     developing new technologies with a focus on parallel and distributed systems.
@@ -26,8 +26,8 @@
                 </p>
                 <div class = "socials">
                     <h2>Socials</h2>
-                    <div class = "linkedin"><a href="/"><i class="fa-brands fa-linkedin"></i></a></div>
-                    <div class = "github"><a href="/"><i class="fa-brands fa-github"></i></i></a></div>
+                    <div class = "linkedin"><a href="https://www.linkedin.com/in/jack-wong-b05b60232/"><i class="fa-brands fa-linkedin"></i></a></div>
+                    <div class = "github"><a href="https://github.com/JWongCentral"><i class="fa-brands fa-github"></i></i></a></div>
                 </div>
             </div>
             <div class = "project_links">
@@ -63,7 +63,7 @@
                     <ul>
                         <li><p>Software Developement Course<p></li>
                         <li><p>Database course<p></li>
-                        <li><p>Ai/ML course<p></li>
+                        <li><p>AI/Machine Learning course<p></li>
                         <li><p>Networking course<p></li>
                         <li><p>Neural Technology and Engineering course<p></li>
                     </ul>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <div class = "image">
-                    possible images
+                    <img src = "{%static 'images/minesweeper_demo.png'%}" alt = "proj_1_img">
                 </div>
             </div>
             <div class = "project two" id = "two">
@@ -155,11 +155,11 @@
                     <h2>Github:</h2>
                     <a href = "https://github.com/QuackHeadCoder/CMSC_447_Group_project" target = "_blank"><i class="fa-brands fa-github"></i><a>
                     <h2>Live Test:</h2>
-                    <p>Not Available</p>
+                    <a href = "http://jwongumbc.pythonanywhere.com/" target = "_blank"><i class="fa-solid fa-code"></i></a>
                     </div>
                 </div>
                 <div class = "image">
-                    possible images
+                    <img src = "{%static 'images/skyfall_demo.png'%}" alt = "proj_2_img">
                 </div>
             </div>
             <div class = "project three" id = "three">
@@ -203,7 +203,11 @@
         
                     </div>
                 </div>
-                <div class = "image">
+                <div class = "image one">
+                </div>
+                <div class = "image two">
+                </div>
+                <div class = "image three">
                 </div>
                 
             </div>
@@ -223,7 +227,7 @@
         <div class = "contact_container"> 
             <link rel = "stylesheet" href="{%static '/css/contact.css'%}"/> 
             <div class = "form_container"> 
-                <form method = "POST" action = "/contact">
+                <form method = "POST" action = "/">
                     {% csrf_token %}
                     {{form}}
                     
