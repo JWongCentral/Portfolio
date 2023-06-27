@@ -93,7 +93,7 @@ html{
     min-height: 1050px;
 }
 .page.three .projects_container .project.two{
-    min-height: 725px;
+    min-height: 775px;
 }
 .page.three .projects_container .project.three{
     min-height: 1200px;
@@ -103,35 +103,81 @@ html{
     min-height: 600px;
     height: 45%;
     width: 45%;
-    border: solid 3px white;
+    border: solid 3px rgba(255,255,255,0.75);
+    box-shadow:0 0 5px 5px rgba(255, 255, 255,.5);
     border-radius: 40px;
     margin-top: 15%;
+}
+.page.three .projects_container .project.one .image img{
+    min-width: 600px;
+    min-height: 600px;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
 }
 .page.three .projects_container .project.two .image{
     min-width: 600px;
     min-height: 600px;
     height: 45%;
     width: 45%;
-    border: solid 3px white;
+    border: solid 3px rgba(255,255,255,0.75);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255,.5);
     border-radius: 40px;
-    margin-top: 15%;
+    margin-top: 5%;
+}
+.page.three .projects_container .project.two .image img{
+    min-width: 600px;
+    min-height: 600px;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
 }
 
-.page.three .projects_container .project.three .image{
+.page.three .projects_container .project.three .image.one{
     display:flex;
     min-height: 200px;
     min-width: 600px;
     height: auto;
     width: auto;
-    border: solid 3px white;
-    box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, 0.8);
+    border: solid 3px rgba(255,255,255,0.75);
+    box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, 0.5),0 0 5px 5px rgba(255, 255, 255, 0.5);
     border-radius: 40px;
-    margin-top: 15%;
+    margin-top: 5%;
     background: rgba(0,0,0,0.5);
     background-image: url("https://www.openmp.org/wp-content/uploads/openmp-header-logo-100h.png");
     background-size:auto;
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
+.page.three .projects_container .project.three .image.two{
+    display:flex;
+    min-height: 400px;
+    min-width: 400px;
+    height: auto;
+    width: auto;
+    border: solid 3px rgba(255,255,255,0.75);
+    box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, 0.5),0 0 5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    margin-top: 5%;
+    background: rgba(0,0,0,0.5);
+    background-image: url("https://codeforces.com/predownloaded/35/2c/352c7a48774529b0484dd14b352e46335529e6cb.png");
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.page.three .projects_container .project.three .image.three{
+    display:flex;
+    min-height: 500px;
+    min-width: 500px;
+    height: auto;
+    width: auto;
+    border: solid 3px rgba(255,255,255,0.75);
+    box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, 0.5),0 0 5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    margin-top: 5%;
+    background: rgba(0,0,0,0.5);
+    background-image: url("https://i.ytimg.com/vi/klcIklsWzrY/maxresdefault.jpg");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -6,7 +6,7 @@
     font-size: 25px;
     margin: 3%;
     width: 70%;
-    height: 72%;
+    height: 77%;
     border-radius:30px;
     padding: 30px;
     overflow-y:auto;
@@ -88,10 +88,13 @@
 .page.one .Description img{
     margin-left: 25%;
     margin-top: 20px;
-    height:350px;
-    width:350px;
-    border-radius: 75px;
-    border: 3px solid red;
+    min-height:240px;
+    min-width:105px;
+    height: 400px;
+    width: 310px;
+    border-radius: 100%;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: inset 0 0 100px 100px rgba(255,255,255,0.8), 0 0 10px 10px rgba(255,255,255,0.5);
 }
 
 .page.one .Description h1{
@@ -156,9 +159,4 @@
 
 .page.one .project:hover{
     box-shadow: 0 0 10px 10px rgb(9, 255, 0);
-}
-
-.home{
-    border: solid 3px white;
-    border-radius: 30px;
 }

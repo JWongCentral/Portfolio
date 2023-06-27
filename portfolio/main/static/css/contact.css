@@ -1,11 +1,8 @@
-.contact{
-    border: solid 3px white;
-    border-radius: 30px;
-}
+
 
 .page.four .contact_container{
     margin: 7.5%;
-    height: 70%;
+    height: 75%;
     width: 55%;
     overflow:auto;
     border-radius: 8%;

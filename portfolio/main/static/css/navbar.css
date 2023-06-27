@@ -296,3 +296,10 @@ header h3{
 .active{
     left:250px;
 }
+
+.active-page{
+    opacity:1;
+    border: solid 3px white;
+    border-radius: 30px;
+    transition: all 1s;
+}
