@@ -1,0 +1,22 @@
+body{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.search_container{
+    padding-top: 3%;
+    padding-left: 3%;
+    height: 30%;
+    width:100%;
+    border: 3px solid red;
+}
+.search-box{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    height: 100px;
+    width: 300px;
+}
+.search-text h1{
+    color: red;
+}

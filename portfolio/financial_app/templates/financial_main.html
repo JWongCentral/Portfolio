@@ -1,0 +1,23 @@
+
+{% extends "financial_navbar.html"%}
+{%load static%}
+
+{%block title%}
+<title>JWong Portfolio</title>
+{%endblock%}
+
+{%block content%}
+<body>
+    <link rel = "stylesheet" href="{%static '/css/financial/main.css'%}"/>
+    <div class = "search_container">
+        <div class "search-text">
+            <h1>Lookup a company/ticker by typing in the box below:</h1>
+        </div>
+        <div class = "search-box">
+            <form action="{% url 'main' %}" method="get">
+                <input name="q" type="text" placeholder="Search...">
+            </form>
+        </div>
+    <div>
+</body>
+{%endblock content%}

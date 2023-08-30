@@ -19,48 +19,12 @@ def index(request):
     return render(request,"home.html")
 def resume(request):
     return render(request,"resume.html")
-def expertise(request):
-    return render(request,"expertise.html")
 def projects(request):
     return render(request,"projects.html")
 
 
-def contact(request):
-    
-    #only one button to send data
-    if request.method == "POST":
-        
-        form = Contact_EmailForm(request.POST)
-        
-        if form.is_valid():
-            name = form.cleaned_data["contact_name"]
-            email = form.cleaned_data["contact_email"]
-            subject = form.cleaned_data["contact_subject"]
-            message = name + " would like to contact you\n"+"My email is "+email+"\n"+form.cleaned_data["contact_message"]
-            if(EMAIL_ENABLED):
-                email = send_mail(
-                    subject,    #subject line
-                    message,    #message content
-                    settings.EMAIL_HOST_USER,   #sender email, this should be the email bot set up in configs
-                    ["jackbwong1998@gmail.com"],#the email receiving the message
-                    fail_silently=False,
-                )
-            
-            return render(request, "contact.html", {"form": Contact_EmailForm(), "success":True, "error":False})
-        
-        #error
-        else:
-            return render(request, "contact.html", {"form": form, "success":False, "error":True})
-    else:
-        form = Contact_EmailForm()
-
-    return render(request, "contact.html", {"form":Contact_EmailForm()})
-
-
-
 #contains live version of minesweeper
 def minesweeper(request):
-
     return render(request,"minesweeper.html")
 
 def minesweeper_get(request):
